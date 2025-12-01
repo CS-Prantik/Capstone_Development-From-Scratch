@@ -29,7 +29,6 @@ Follow this generic flow to run any project from this repo:
 cd <folder-name>   # e.g. NODEJS, React/my-reactapp, etc.
 npm install        # installs dependencies  
 npm start          # or the start command defined in package.json  
-# 🚀 Capstone Development — From Scratch
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/CS-Prantik/Capstone_Development-From-Scratch)
 ![GitHub stars](https://img.shields.io/github/stars/CS-Prantik/Capstone_Development-From-Scratch?style=social)
@@ -38,8 +37,6 @@ npm start          # or the start command defined in package.json
 ![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow)
 ![Node.js](https://img.shields.io/badge/Backend-Node.js-green)
 ![React](https://img.shields.io/badge/Frontend-React-blue)
-
-> A complete **development-from-scratch learning repository** containing frontend, backend, database, and full-stack projects built during capstone and skill-building phases.
 
 ---
 
@@ -94,10 +91,4 @@ This repo is ideal for:
 
 ---
 
-## ⚙️ How to Install & Run
-
-### 🔹 Step 1: Clone the Repository
-```bash
-git clone https://github.com/CS-Prantik/Capstone_Development-From-Scratch.git
-cd Capstone_Development-From-Scratch
 
