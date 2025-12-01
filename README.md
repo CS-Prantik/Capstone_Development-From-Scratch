@@ -3,10 +3,6 @@
 A full-stack / multi-tech project collection — showcasing assignments and projects built from ground up using technologies like Node.js, React, MongoDB, vanilla JS, jQuery, and more.  
 
 ---
-
-## 📁 Repository Structure
-
-
 ---
 
 ## ✨ What’s Inside
