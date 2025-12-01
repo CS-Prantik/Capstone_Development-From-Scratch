@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <table border=1 style="border-collapse: collapse;" id="mytable">
+            <tr>
+                <th>Student Name</th>
+                <th>Course</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>Prantik De</td>
+                <td>DASSD</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>John De</td>
+                <td>DITISS</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>Wick De</td>
+                <td>DAC</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>HEllo</td>
+                <td>DESD</td>
+                <td>A</td>
+            </tr>
+        </table>
+    </div>
+       <script>
+        var arr=document.querySelectorAll('#mytable tr')
+        for(let i=1;i<arr.length;i++)
+            {
+                  if(i%2==0)
+                  {
+                     arr[i].style.backgroundColor="grey"
+                  }
+                  else
+                  {
+                     arr[i].style.backgroundColor="blue"
+                  }
+
+            }
+    </script>
+</body>
+</html>

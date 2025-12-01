@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100px;
+            width: 50%;
+            margin: 200px 600px;
+        }
+
+        input[type="text"] {
+            padding: 2px;
+            margin-top: 10px;
+        }
+
+        #id-2 {
+            margin-left: 2px;
+        }
+
+        input[type="button"] {
+            margin-top: 20px;
+            margin-left: 100px;
+        }
+    </style>
+
+    <script>
+        function getTable() {
+            let n1 = parseInt(document.getElementById("id-1").value);
+            let n2 = parseInt(document.getElementById("id-2").value);
+
+            let str = "";
+
+            for (let i = 1; i <= n2; i++) {
+                str += `${n1} x ${i} = ${n1 * i}\n`;
+            }
+
+                
+                let table = document.createElement("textarea");
+                table.rows = 10;
+                table.cols = 40;
+                document.body.appendChild(table);
+            
+
+            table.value = str;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+        <label for="id-1">Start Number</label>
+        <input type="text" name="number" id="id-1"><br>
+        <label for="id-2">End Number</label>
+        <input type="text" name="number" id="id-2"><br>
+        <input type="button" value="Times Table" onclick="getTable()">
+        <input type="reset" value="Reset"><br>
+        </form>
+    </div>
+</body>
+
+</html>

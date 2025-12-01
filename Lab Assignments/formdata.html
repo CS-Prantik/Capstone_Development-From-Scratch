@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <label for="md-1"><b>Enter Name:-</b></label>
+      <input type="text" name="uname" id="md-1" required placeholder="Enter Name" autofocus>
+      <br>
+      <br>
+      <label for="d-1"><b>Enter Date:-</b></label>
+      <input type="date" name="date" id="d-1">
+      <br>
+      <br>
+      <label for="e-1"><b>Enter Email</b></label>
+      <input type="email" name="email" id="e-1" placeholder="Enter Email">
+      <br>
+      <br>
+      <label for="md-2"><b>Gender</b></label>&nbsp;&nbsp;
+      Male: <input type="radio" name="gender" id="md-2" value="Male">
+      Female: <input type="radio" name="gender" id="md-2" value="Female">
+      <br>
+      <br>
+      <label for="fv-2"><b>Favorite Foods:-</b></label>
+      <span style="margin-left: 50px;">
+        Fish <input type="checkbox" value="fish" id="fv-2">
+         Maggie <input type="checkbox" value="maggie" id="fv-2">
+          Panner <input type="checkbox" value="panner" id="fv-2">
+      </span>
+      <br>
+      <br>
+      <button type="submit" class="btn" onclick="submitHandler()">Submit</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

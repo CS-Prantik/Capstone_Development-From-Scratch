@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btn1').click(function () {
+                $('p').append('<b>Hi prantik</b>')
+            })
+            $('#btn2').click(function () {
+                $('ol').append('<li>Append Item</li>')
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <p>This is paragraph</p>
+    <p>This is another paragraph</p>
+    <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <button id="btn1">
+            Append Text
+        </button>
+        <button id="btn2">
+            Append List
+        </button>
+    </ol>
+</body>
+
+</html>

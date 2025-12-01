@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var getresult=()=>{
+        var res=document.getElementsByName("Add-1")
+        let sum=0;
+        for(let i=0;i<res.length;i++)
+        {
+            sum+=Number(res[i].value);
+        }
+        document.getElementById("k-1").innerHTML=sum;
+        }
+    </script>
+</head>
+<body>
+      <div class="container">
+        <label for="a-1">Enter No:-1</label>
+        <input type="text" name="Add-1" id="a-1"><br>
+        <label for="a-2">Enter No2</label>
+        <input type="text" name="Add-1" id="a-2"><br>
+         <input type="button" value="Add" onclick="getresult()"><br>
+         <span id="k-1"></span>
+      </div>
+</body>
+</html>

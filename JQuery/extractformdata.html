@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $('document').ready(function(){
+
+         $('#btn').click(function(){
+            let d1=$('#md-1').val()
+            let d2=$('#md-2').val()
+
+            $('#id').text("Welcome"+d1+"your password"+d2);
+         })
+        })
+    </script>
+</head>
+<body>
+    <form action="">
+        Username:<input type="text" name="uname" id="md-1">
+        Password: <input type="password" name="pwrd" id="md-2">
+        <button id="btn" type="submit">Submit</button>
+        <p id="id"></p>
+    </form>
+</body>
+</html>

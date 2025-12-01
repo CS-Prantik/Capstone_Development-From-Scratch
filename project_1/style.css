@@ -1,0 +1,16 @@
+body{
+    background: linear-gradient(132deg, rgb(221, 221, 221) 63.13%, rgb(110, 136, 161) 100.00%);
+}
+.head1{
+    display: flex;
+    justify-content: center;
+}
+.head2{
+     text-align: center;
+}
+.md1{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}

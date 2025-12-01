@@ -1,0 +1,40 @@
+fieldset{
+    width: 60%;
+    background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.container{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 200px 520px;
+
+}
+input[type="text"]:focus {
+    background-color: rgb(217, 225, 209);
+}
+#u-name,#u-inst{
+    padding: 3px;
+    margin-top: 20px;
+    border-style:groove;
+    border-radius: 10px;
+}
+#u-inst{
+    margin-left: 15px;
+}
+#b-0,#b-1{
+    margin-top: 20px;
+    padding: 1px;
+}
+#b-1,#d-1{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+#d-1{
+    margin-left: 20px;
+}
+#m-1{
+    margin-top: 20px;
+    width: 10%;
+}

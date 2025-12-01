@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            margin:200px 400px;
+            width: 30%;
+            padding: 80px;
+            border: 1px solid black;
+            border-radius: 20px;
+            box-sizing:border-box;
+        }
+         
+         .c-1{
+            padding: 20px;
+         }
+         input[type="date"]{
+            margin-left:11px;
+            padding:5px;
+         }
+        input[type="date"],input[type="email"]{
+
+             margin-bottom: 10px;
+        }
+        #md-4{
+            margin-bottom: 10px;
+        }
+        #g-1{
+            margin-right: 5px;
+        }
+        #md-6,#md-7,#md-8{
+            margin-left: 90px;
+        }
+        #g-2{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <form action="">
+            <label for="md-1">Name:</label>
+            <input type="text" name="name" id="md-1"><br>
+            <label for="md-2">Date:-</label>
+            <input type="date" name="date" id="md-2"><br>
+            <label for="md-3">Email</label>
+            <input type="email" name="email" id="md-3"><br>
+            <span id="g-1">Gender:-</span>
+            Male<input type="radio" name="gender" id="md-4">
+            Female <input type="radio" name="gender" id="md-4"><br>
+            <label for="md-5">Lucky Number(1-100):-</label>
+            <input type="number" name="number" id="md-5"><br>
+            <span id="g-2">Favorite Foods</span><br>
+             <div class="c-1">
+            <input type="checkbox" name="Pizza" id="md-6">Pizza<br>
+            <input type="checkbox" name="Pasta" id="md-7">Pasta<br>
+            <input type="checkbox" name="Chinese" id="md-8">Chinese<br>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

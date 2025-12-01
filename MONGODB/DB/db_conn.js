@@ -1,0 +1,5 @@
+const mongoose=require('mongoose')
+var conn=('mongodb://127.0.0.1:27017/wick')
+mongoose.connect(conn)
+.then(()=>{console.log("Mongodb Connceted")})
+.catch((err)=>{console.log(err)})

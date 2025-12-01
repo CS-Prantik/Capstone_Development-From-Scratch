@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        function getvalue() {
+            var xhr = new XMLHttpRequest();
+
+            xhr.open('GET', 'https://jsonplaceholder.org/posts', true);
+
+            xhr.onreadystatechange = function() 
+            {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+
+                    let todos = JSON.parse(xhr.responseText);
+                    let str = "";
+
+                    str += '<table border="1" cellpadding="5">';
+                    str += '<tr><th>ID</th><th>Published</th></tr>';
+
+                    for (let data of todos) {
+                        str += "<tr><td>" + data.id + "</td><td>" + data.published + "</td></tr>";
+                    }
+
+                    str += "</table>";
+
+                    document.querySelector('div').innerHTML = str;
+                }
+            }
+
+            xhr.send();
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="getvalue()">Fetch Todo list</button>
+    <div></div>
+</body>
+</html>

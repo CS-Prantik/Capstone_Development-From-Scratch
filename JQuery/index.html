@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+ <p class="odd">This is my para</p>
+ <p id="second">this is my para</p>
+ <p id="even">this is my para</p>
+ <p>this is my para</p>
+ <script>
+   $(document).ready(function(){
+      
+      $('p').click(function(){
+        console.log("You clicked on p",this)
+      })
+   })
+//    There are three main types of selector in jQuery
+//    1.element selector
+//    2.id selector
+//    3.Class Selector
+
+    //Example of id selector
+     //$('#second').click()
+     //Example of class selector
+     $('p.odd').click()
+     //other selectors
+     //$('*').click() click on all the elements
+     //Events in jquery
+     //mouse events=click,dblclick,mouseenter,mouseleave
+     //keyboard events=keypress,keydown
+     //form events=submit,change,focus,blur
+     //document/window=load,resize,scroll,unload
+
+     //on method
+     $('p').on('click',function(){
+        console.log("Thanks for clicking")
+     },
+      mouseenter,function(){
+       console.log('Mouse Event Occcured')
+      },
+      mouseleave,function(){
+        console.log('mouse event occured')
+      })
+
+     
+</script>
+
+</body>
+</html>
